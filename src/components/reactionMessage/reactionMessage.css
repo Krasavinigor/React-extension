@@ -1,0 +1,19 @@
+.reaction-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reaction-icon {
+  padding-top: 1rem;
+  padding-bottom: .5rem;
+  width: 4rem;
+}
+
+.message-content {
+  font-size: .7rem;
+  font-family: "Roboto";
+  text-align: center;
+  color: var(--content-color);
+  margin: .5rem 0;
+}

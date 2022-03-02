@@ -1,0 +1,7 @@
+.box-row-space-around {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 8rem;
+}

@@ -1,0 +1,27 @@
+.box-row-main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.box-column-main {
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+}
+
+.box-flex-end-main {
+  justify-content: flex-end;
+}
+
+.box-template-list {
+  margin: .3rem auto;
+  align-items: stretch;
+  column-gap: .3rem;
+  row-gap: .3rem;
+}
+
+.box-template-editor {
+  align-items: top;
+}

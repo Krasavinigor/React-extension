@@ -1,0 +1,24 @@
+.title {
+  color: var(--secondary-color);
+  font-size: 1rem;
+  font-family: "Mina", sans-serif;
+}
+
+.box-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.box-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.box-flex-end {
+  justify-content: flex-end;
+}
+
+.box-space-between {
+  justify-content: space-between;
+}

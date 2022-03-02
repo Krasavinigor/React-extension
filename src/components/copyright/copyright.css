@@ -1,0 +1,7 @@
+.image {
+  width: 50%;
+  align-self: center;
+  margin: .6rem;
+  padding: .4rem;
+  background-color: var(--copyright-background-color);
+}

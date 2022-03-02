@@ -1,0 +1,43 @@
+{
+  "name": "Recruiter's assistant",
+  "description": "Effective tool for data retrieval from LinkedIn",
+  "version": "1.0",
+  "manifest_version": 3,
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmWr8SR+/u3LaRckMw54px5XVdteeNVV+4xBhozBEJxXfucMDN2jfaI9AFCAkDbqq9fITK/FBan7xsaF0zHtnC5Bbnups/2fCtTurmjKmI/Bhf/6ypu9vqOHthr3IsFcBwImW5rniktf5YJPfiArJN++hGnT8uVi/EAhSC5i3hPYJEB5EZHvluWiAbtg5sey0cf60n5GAkQSoz1VNcc7o20qneDXkyCh/J5lri78tqu3wBXlgU2RBK+rWSTIWuLEgE9rfvmXRhTy4Dm7GgJ0XCl8pKc7uwSyT10dR/5dfKmxGCvNCzrhdRVp0vtcbhBLmxLGgXDTegf33XYB6awkAvwIDAQAB",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "logo.png",
+    "default_title": "Open the Recruiter's assistant"
+  },
+  "oauth2": {
+    "client_id": "310172944435-h24018plluv6r6dhsdb4t90rt7uk81f1.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/userinfo.profile"
+    ]
+  },
+  "host_permissions": ["*://*.linkedin.com/"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.linkedin.com/*"],
+      "js": ["userInfoGetter.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "cookies",
+    "storage",
+    "tabs",
+    "identity",
+    "identity.email"
+  ],
+  "icons": {
+    "16": "logo16.png",
+    "32": "logo32.png",
+    "48": "logo48.png"
+  },
+  "background": {
+    "service_worker": "backgroundScript.js"
+  }
+}

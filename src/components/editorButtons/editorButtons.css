@@ -1,0 +1,6 @@
+.editor-button {
+  width: .6rem;
+  height: .6rem;
+  padding-right: .4rem;
+  color: var(--background-color);
+}

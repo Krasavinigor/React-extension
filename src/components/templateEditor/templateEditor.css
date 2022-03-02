@@ -1,0 +1,28 @@
+:root {
+  --border-radius: 4px;
+}
+
+.MuiFormControl-root {
+  width: 100%;
+  font-size: 4;
+  border: 1px solid;
+  border-color: var(--border-color);
+}
+
+.inputRounded .MuiOutlinedInput-root {
+  border-top-right-radius: var(--border-radius);
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.editor-buttons-root {
+  padding: 0;
+  border: 1px solid;
+  border-color: var(--border-color);
+  display: flex;
+  border-top: none;
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  width: -webkit-fill-available;
+}

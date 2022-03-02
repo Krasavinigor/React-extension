@@ -1,0 +1,9 @@
+.person-primary-text {
+  color: var(--mutual-connection-color);
+  font-size: .9rem;
+}
+
+.person-secondary-text {
+  color: var(--content-color);
+  font-size: .7rem;
+}

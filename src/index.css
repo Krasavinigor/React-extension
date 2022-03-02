@@ -1,0 +1,14 @@
+html {
+  background-color: var(--background-color);
+  color: var(--template-color);
+  font-family: Roboto;
+  font-size: 18px;
+}
+
+body {
+  max-height: 30rem;
+  margin: 0 auto;
+  padding: 0 1rem 1rem;
+  position: relative;
+  width: 15.5rem;
+}
